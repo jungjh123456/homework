@@ -300,7 +300,7 @@ for(var i = 0; i < 5; i++){
       result =  result + ' ';
    
   }
-  for(var k = 0; k <= i; k++){
+  for(var j = 0; j <= i; j++){
     result = result + '*';
   }
  
