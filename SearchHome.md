@@ -36,15 +36,15 @@ console.log(linearSearch([1, 2, 3, 4, 5, 6], 7)); // -1
 ```js
 function binarySearch(array, target) {
   var start = 0;
-  var end = array.length;
-  var mid;
-  var i = 0;
-  while(i < end) {
-    mid = (start + end) / 2;
-    if( array[i] === target) return i;
-    else if(array[mid] > target) end = end -1;
-    else if(array[mid] < target) start = start + 1;
-    i++
+  var end = array.length-1;
+
+
+  while(start <= end) {
+    var mid = Math.floor((start + end) / 2);
+    if( array[mid] === target) return mid;
+    else if(array[mid] > target) end = mid -1;
+    else if(array[mid] < target) start = mid + 1;
+    
   }
   return -1;
 }
