@@ -12,7 +12,7 @@ function selectionSort(array) {
       if(temp !== i){ // temp랑 i 가 같지 않을 시
           let sort = array[temp]; // sort변수에 array[temp] 할당
           array[temp] = array[i]; // array[temp]는 기존 array[i]를 할당
-          array[i] = sort; // array[i] 에 sort 즉 array[temp]저장
+          array[i] = sort; // array[i] 에 sort 즉 기존 array[temp]저장
       }
   }
   return array;
